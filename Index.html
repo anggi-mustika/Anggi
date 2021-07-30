@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project Pemrograman Web</title>
+        <style>
+            
+            .container{overflow: hidden}
+            .tab{float: left;}
+            .tab-2{margin-left: 100px}
+            .tab-2 input{display: block;margin-bottom: 10px}
+            tr{transition:all .25s ease-in-out}
+            tr:hover{background-color:#EEE;cursor: pointer}
+            
+        </style>
+        
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="tab tab-1">
+                <table id="table" border="1">
+                    <tr>
+                        <th>Nama</th>
+                        <th>NPM</th>
+                        <th>Alamat</th>
+                        <th>Email</th>
+                    </tr>
+                   
+                </table>
+            </div>
+            <div class="tab tab-2">
+                Nama :<input type="text" name="Nama" id="Nama">
+                NPM :<input type="number" name="NPM" id="NPM">
+                Alamat :<input type="text" name="Alamat" id="Alamat">
+                Email :<input type="text" name="Email" id="Email">
+                
+                <button onclick="addHtmlTableRow();">Add</button>
+                <button onclick="editHtmlTbleSelectedRow();">Edit</button>
+                <button onclick="removeSelectedRow();">Delete</button>
+            </div>
+        </div>
+        <script src="Fungsi.js"></script>
+    </body>
+</html>
